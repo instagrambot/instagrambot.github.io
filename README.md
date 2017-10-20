@@ -1,6 +1,6 @@
-# Jekyll Doc Theme
+# Instabot landing page sources
 
-Go to [the website](https://aksakalli.github.io/jekyll-doc-theme/) for detailed information and demo.
+Go to [the website](https://instagrambot.github.io/) for detailed information.
 
 ## Running locally
 
@@ -11,8 +11,8 @@ You need Ruby and gem before starting, then:
 gem install bundler
 
 # clone the project
-git clone https://github.com/aksakalli/jekyll-doc-theme.git
-cd jekyll-doc-theme
+git clone https://github.com/instagrambot/instagrambot.github.io.git
+cd instagrambot.github.io
 
 # run jekyll with dependencies
 bundle exec jekyll serve
