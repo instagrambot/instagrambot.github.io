@@ -1,11 +1,6 @@
-- title: Installation
+- title: EN
   docs:
-  - home
-  - themes
-  - customization
-
-- title: Examples
-  docs:
-  - cheatsheet
-  - font-awesome
-  - bootstrap
+  - en/README.md
+  - en/How_to_use.md
+  - en/Installation_on_Unix.md
+  - en/Installation_on_Windows.md
