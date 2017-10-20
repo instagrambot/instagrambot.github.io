@@ -1,10 +1,7 @@
 ---
-title: Filtration
-permalink: /docs/en/Filtration.md
+title: How does the Instabot filter people?
+permalink: /docs/en/Filtration
 ---
-
-
-# How does the Instabot filter people?
 
 It's no secret that Instabot, before subscribing to people, filters them so as not to subscribe to a knowingly inactive and fake audience. Below you will find the entire list of conditions that apply in this filtration.
 
