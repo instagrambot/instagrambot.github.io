@@ -3,8 +3,6 @@ title: General info
 permalink: /docs/en/README.md
 ---
 
-# Instabot
-
 Cool Instagram scripts for promotion and API wrapper. Written in Python.
 
 ![Instabot is better than other open-source bots!](/docs/img/tag%20instabot.png "Instabot is better than other open-source bots!")
