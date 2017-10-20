@@ -1,11 +1,7 @@
 ---
-title: Hot to use
-permalink: /docs/en/Hot_to_use
+title: Instructions for use
+permalink: /docs/en/How_to_use
 ---
-
-
-
-# Instructions for use
 
 **Important! Read the instructions from start to finish, and then act! Good luck!**
 

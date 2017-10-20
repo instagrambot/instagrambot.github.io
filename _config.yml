@@ -1,9 +1,8 @@
 # Site settings
-title: Jekyll Doc Theme
-email: your-email@domain.com
+title: Instabot
+email: instabotproject@gmail.com
 description: >
-  Jekyll Template for Project Websites
-  providing documentation and blog post pages.
+  Instabot landing page.
 
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: https://instagrambot.github.io/jekyll-doc-theme # the base hostname & protocol for your site
