@@ -1,6 +1,6 @@
 ---
 title: Filtration
-permalink: /docs/en/Filtration
+permalink: /docs/en/Filtration.md
 ---
 
 

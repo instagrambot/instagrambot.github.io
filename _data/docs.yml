@@ -1,6 +1,6 @@
 - title: EN
   docs:
-  - /en/README
-  - /en/How_to_use
-  - /en/Installation_on_Unix
-  - /en/Installation_on_Windows
+  - /docs/en/README
+  - /docs/en/How_to_use
+  - /docs/en/Installation_on_Unix
+  - /docs/en/Installation_on_Windows

@@ -1,6 +1,6 @@
 ---
 title: Windows Installation
-permalink: /docs/en/Installation_on_Windows
+permalink: /docs/en/Installation_on_Windows.md
 ---
 
 
