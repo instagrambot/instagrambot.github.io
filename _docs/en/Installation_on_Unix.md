@@ -1,6 +1,6 @@
 ---
 title: Unix Installation
-permalink: /docs/en/Installation_on_Unix.md
+permalink: /docs/en/Installation_on_Unix
 ---
 
 

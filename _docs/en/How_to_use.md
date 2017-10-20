@@ -1,6 +1,6 @@
 ---
 title: Hot to use
-permalink: /docs/en/Hot_to_use.md
+permalink: /docs/en/Hot_to_use
 ---
 
 

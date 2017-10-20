@@ -1,6 +1,6 @@
 ---
 title: Customization
-permalink: /docs/en/FAQ.md
+permalink: /docs/en/FAQ
 ---
 
 

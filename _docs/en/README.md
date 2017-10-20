@@ -1,6 +1,6 @@
 ---
 title: General info
-permalink: /docs/en/README.md
+permalink: /docs/en/README
 ---
 
 # Instabot

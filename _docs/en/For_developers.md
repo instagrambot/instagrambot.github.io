@@ -1,6 +1,6 @@
 ---
 title: For Developers
-permalink: /docs/en/For_developers.md
+permalink: /docs/en/For_developers
 ---
 
 
