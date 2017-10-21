@@ -1,62 +1,186 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Instabot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
 
-<div class="header-container jumbotron">
-    <div class="container">
-        <h1>Instabot</h1>
-        <p>Instagram promotion and SMM tools. Forever free.
-          Open-source, written in Python. </p>
-        <p><a class="btn btn-primary btn-lg" href="{{ "https://github.com/instagrambot/instabot" | prepend: site.baseurl }}" role="button">Learn more</a></p>
-    </div>
-</div>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="https://github.com/instagrambot/docs/raw/master/img/favicons/mstile-150x150.png" alt="" /></span>
+						<h1>Instabot</h1>
+						<p>Instagram promotion and SMM scripts.<br />
+						Forever free. Written in Python.</p>
+					</header>
 
-<div class="container">
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#first">Features</a></li>
+							<li><a href="#second">Stats</a></li>
+							<li><a href="#cta">Get Started</a></li>
+						</ul>
+					</nav>
 
-    <div class="row">
-        <div class="col-md-6">
-            <h2 class="header-light regular-pad">What is Instabot?</h2>
-            <blockquote>
-              <p>Jekyll is a simple, blog-aware, static site generator. It takes a template
-              directory containing raw text files in various formats, runs it through
-              a converter (like <a href="https://daringfireball.net/projects/markdown/">Markdown</a>)
-              and our <a href="https://github.com/instagrambot/instabot">Instabot</a> renderer, and
-              spits out a complete, ready-to-publish static website suitable
-              for serving with your favorite web server. Jekyll also happens to be the engine
-              behind <a href="https://pages.github.com">GitHub Pages</a>, which means you can use Jekyll
-              to host your project’s page, blog, or website from GitHub’s servers <strong>for
-              free</strong>.</p>
-            </blockquote>
-        </div>
-        <div class="col-md-6 text-center">
-            <img src="img/jekyll.png" alt="" class="img-responsive">
-        </div>
-    </div>
+				<!-- Main -->
+					<div id="main">
 
-    <hr>
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>What is it?</h2>
+										</header>
+										<p>Instabot is a Python module, which not only implements the wrapper over the Instagram API, but also various useful functions, such as
+											<ul>
+												<li><a href="https://github.com/instagrambot/instabot/blob/master/examples/follow_users_by_hashtag.py">subscribe to the list of people</a>,</li>
+												<li><a href="https://github.com/instagrambot/instabot/blob/master/examples/like_hashtags.py">like photos by hashtags</a>,</li>
+												<li><a href="https://github.com/instagrambot/instabot/blob/master/examples/unfollow_non_followers.py">unsubscribe from non-followers</a>.</li>
+											</ul>
+										</p>
+										<ul class="actions">
+											<li><a href="https://github.com/instagrambot/instabot/tree/master/examples" class="button">More scripts</a></li>
+										</ul>
+									</div>
+									<span class="image"><img src="https://github.com/instagrambot/docs/raw/master/img/favicons/android-chrome-384x384.png" alt="" /></span>
+								</div>
+							</section>
 
-    <div class="row">
-        <div class="col-sm-4">
-            <h1 class="text-center"><i class="fa fa-pencil" aria-hidden="true"></i></h1>
-            <h3 class="text-center">Easy to install and publish</h3>
-            <p>Get started by clonening source into GitHub account of your project. Thanks to <a href="https://pages.github.com">GitHub Pages</a>,
-              it will be automatically compiled and publsihed under your project's subdomain on `github.io`.
-            </p>
-        </div>
-        <div class="col-sm-4">
-            <h1 class="text-center"><i class="fa fa-cogs" aria-hidden="true"></i></h1>
-            <h3 class="text-center">Modular Styling and Templating</h3>
-            <p>This template uses <a href="https://github.com/twbs/bootstrap-sass">bootstrap-sass</a> along with <a href="https://bootswatch.com/">Bootwatch themes</a>.
-            You can change the theme or write your custom by overwriting bootstrap sass variables for different color set, font options, etc.</p>
-        </div>
-        <div class="col-sm-4">
-            <h1 class="text-center"><i class="fa fa-code-fork" aria-hidden="true"></i></h1>
-            <h3 class="text-center">Git based source control</h3>
-            <p>Leverege from Git version control system by
-              maintaining your documentation along with the source code; publish the page when you merge to the master branch.</p>
-        </div>
-    </div>
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>Features</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="icon major style5 fa-diamond"></span>
+										<h3>Pure AI</h3>
+										<p>Instabot is smart enough: it <a href="https://instagrambot.github.io/docs/en/Filtration.html">filters</a> users on which it is going to subscribe or like. That helps to attract real people.</p>
+									</li>
+									<li>
+										<span class="icon major style3 fa-copy"></span>
+										<h3>Lots of prepared scripts</h3>
+										<p>Instabot community has already coded the <a href="https://github.com/instagrambot/instabot/tree/master/examples">huge amount</a> of useful scripts for almost every necessary task.</p>
+									</li>
+									<li>
+										<span class="icon major style1 fa-code"></span>
+										<h3>Fully open-source</h3>
+										<p>All code is hosted on <a href="https://github.com/instagrambot/">GitHub</a> and has been checked by thousands of developers. No one can steal your password via Instabot.</p>
+									</li>
+								</ul>
+								<footer class="major">
+									<ul class="actions">
+										<li><a href="https://instagrambot.github.io/docs/" class="button">Read the Docs</a></li>
+									</ul>
+								</footer>
+							</section>
 
+						<!-- Second Section -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>Stats</h2>
+									<p>Instabot has been created on winter, 2017.<br />
+									For less than a year it become very popular open-source project on Github. <br />
+									Just take a look at numbers: </p>
+								</header>
+								<ul class="statistics">
+									<li class="style1">
+										<span class="icon fa-star"></span>
+										<strong>500+ </strong> GitHub Stars
+									</li>
+									<li class="style2">
+										<span class="icon fa-code-fork"></span>
+										<strong>180+</strong> GitHub Forks
+									</li>
+									<li class="style3">
+										<span class="icon fa-download"></span>
+										<strong>20+</strong> Downloads Everyday
+									</li>
+									<li class="style4">
+										<span class="icon fa-paper-plane-o"></span>
+										<strong>400+</strong> <a href="https://t.me/instabotproject/">Telegram</a> Community
+									</li>
+									<li class="style5">
+										<span class="icon fa-diamond"></span>
+										<strong>100,000+</strong> Potential Followers
+									</li>
+								</ul>
+								<!-- <p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p> -->
+								<footer class="major">
+									<ul class="actions">
+										<li><a href="https://github.com/instagrambot/" class="button">Go GitHub</a></li>
+									</ul>
+								</footer>
+							</section>
 
-</div>
+						<!-- Get Started -->
+							<section id="cta" class="main special">
+								<header class="major">
+									<h2>Get Started</h2>
+									<p>The best way to start is to read the docs. There you can find the installation and usage details.<br />
+								  Feel free to ask any question at Telegram chat or our other socials.</p>
+								</header>
+								<footer class="major">
+									<ul class="actions">
+										<li><a href="https://instagrambot.github.io/docs/" class="button special">Read the Docs</a></li>
+										<li><a href="https://t.me/instabotproject/" class="button">Join Chat</a></li>
+									</ul>
+								</footer>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>We need you!</h2>
+							<p>If you are a developer, designer, journalist or just a volunteer - we need your contribution into Instabot project. Being completely free Instabot needs fresh ideas and proactive members!</p>
+							<ul class="actions">
+								<li><a href="https://github.com/instagrambot/docs/blob/master/CONTRIBUTING.md" class="button">Contribute</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Contact us</h2>
+							<!-- <dl class="alt">
+								<dt>Address</dt>
+								<dd>https://github.com/instagrambot/</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="mailto:instabotproject@gmail.com">instabotproject@gmail.com</a></dd>
+							</dl> -->
+							<ul class="icons">
+								<li><a href="https://t.me/instabotproject" class="icon fa-paper-plane-o alt"><span class="label">Telegram</span></a></li>
+								<li><a href="https://www.facebook.com/instabotproject/" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/instabotproject/" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.github.com/instagrambot/" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="mailto:instabotproject@gmail.com" class="icon fa-envelope-o alt"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Instabot by <a href="https://www.github.com/ohld/">ohld</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
