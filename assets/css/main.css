@@ -1899,7 +1899,7 @@
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
-		font-weight: 300;
+		font-weight: 400;
 		height: 2.75em;
 		line-height: 2.75em;
 		min-width: 9.25em;
@@ -1907,6 +1907,7 @@
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
+        font-size: 22px;
 	}
 
 		input[type="submit"].icon,
@@ -3107,7 +3108,7 @@
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 2em 1em 1em 1em ;
 		}
 
 			#header.alt h1 {
@@ -3148,11 +3149,11 @@
 		@media screen and (max-width: 1280px) {
 
 			#header {
-				padding: 4em 4em 0.1em 4em ;
+				padding: 1em 1em 0.1em 1em ;
 			}
 
 				#header.alt {
-					padding: 6em 4em 3em 4em ;
+					padding: 2em 1em 1em 2em ;
 				}
 
 		}
@@ -3160,11 +3161,11 @@
 		@media screen and (max-width: 980px) {
 
 			#header {
-				padding: 4em 3em 0.1em 3em ;
+				padding: 2em 1em 0.1em 1em ;
 			}
 
 				#header.alt {
-					padding: 5em 3em 2em 3em ;
+					padding: 2em 1em 1em 1em ;
 				}
 
 		}
@@ -3172,7 +3173,7 @@
 		@media screen and (max-width: 736px) {
 
 			#header {
-				padding: 3em 2em 0.1em 2em ;
+				padding: 2em 1em 0.1em 1em ;
 			}
 
 				#header p {
@@ -3185,7 +3186,7 @@
 					}
 
 				#header.alt {
-					padding: 4em 2em 1em 2em ;
+					padding: 2em 1em 1em 2em ;
 				}
 
 					#header.alt h1 {
@@ -3213,7 +3214,7 @@
 			}
 
 				#header.alt {
-					padding: 3.5em 1em 0.5em 1em ;
+					padding: 2.5em 1em 0.5em 1em ;
 				}
 
 		}
@@ -3624,7 +3625,7 @@
 		@media screen and (max-width: 1280px) {
 
 			#main > .main {
-				padding: 4em 4em 2em 4em ;
+				padding: 2em 1em 1em 2em ;
 			}
 
 				#main > .main > .image.main:first-child {
@@ -3637,7 +3638,7 @@
 		@media screen and (max-width: 980px) {
 
 			#main > .main {
-				padding: 4em 3em 2em 3em ;
+				padding: 2em 1em 1em 1em ;
 			}
 
 				#main > .main > .image.main:first-child {
@@ -3650,7 +3651,7 @@
 		@media screen and (max-width: 736px) {
 
 			#main > .main {
-				padding: 3em 2em 1em 2em ;
+				padding: 2em 1em 1em 1em ;
 			}
 
 				#main > .main > .image.main:first-child {
@@ -3663,7 +3664,7 @@
 		@media screen and (max-width: 480px) {
 
 			#main > .main {
-				padding: 3em 1.5em 1em 1.5em ;
+				padding: 2em 1.5em 1em 1.5em ;
 			}
 
 				#main > .main > .image.main:first-child {
@@ -3680,7 +3681,7 @@
 			}
 
 				#main > .main {
-					padding: 2.5em 1em 0.5em 1em ;
+					padding: 1.5em 1em 0.5em 1em ;
 				}
 
 					#main > .main > .image.main:first-child {
