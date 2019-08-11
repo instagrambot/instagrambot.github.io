@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Instabot - Free Instagram Bot for automation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(52144714, "init", { id:52144714, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/52144714" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/91201205e23d1ace89740a8b9/aaf23c4b424355bfca8e3d687.js");</script>
+
+    <meta name="yandex-verification" content="67c0843489f8e40f" />
 </head>
 <body>
 <style>
@@ -17,7 +21,7 @@
 
     .container {
         display: flex;
-        height: 100vh;
+        min-height: 100vh;
         position: relative;
     }
 
@@ -38,6 +42,41 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        padding-bottom: 10vh;
+    }
+
+    @media (max-width: 500px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .container > div {
+            min-height: 100vh;
+        }
+
+        .container .or {
+            top: 100vh;
+            left: 50%;
+            height: auto;
+            margin: 0;
+            flex-basis: 0;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(to top, #FFFFFF, #FFFFFF 50%, #24292e 50%, #24292e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .container .or.left {
+            padding: 0 0 15px 0;
+        }
+
+        .container .or.right {
+            padding: 15px 0 0 0;
+        }
+
+        .container .terminal {
+            width: 80%;
+        }
     }
 
     .code {
@@ -50,7 +89,7 @@
 
     .extension {
         background: #4182e4;
-        font-size: 1.2em;
+        text-align: center;
     }
 
     .extension h1 {
@@ -71,7 +110,7 @@
         padding: 12px;
         letter-spacing: 1px;
         margin: 0 auto;
-        width: 50%;
+        width: 60%;
         line-height: 2;
         min-width: 192px;
         max-width: 512px;
@@ -150,7 +189,7 @@
     }
 
     h1 {
-        flex-basis: 25%;
+        flex-basis: 20vh;
         display: flex;
         align-items: flex-end;
     }
@@ -162,15 +201,23 @@
         margin-bottom: 2em;
     }
 
+    .code .text a {
+        color: inherit;
+    }
+
+    .code .text a:hover {
+        opacity: 0.6;
+    }
+
     .or {
         transition: padding 0.7s;
         position: absolute;
         top: 0;
-        height: 25%;
+        height: 20vh;
         left: 50%;
         transform: translateX(-50%);
         color: #24292e;
-        background: linear-gradient(to right, #FFFFFF, #FFFFFF 50%, #24292e 50%,  #24292e 100%);
+        background: linear-gradient(to left, #FFFFFF, #FFFFFF 50%, #24292e 50%,  #24292e 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -182,56 +229,74 @@
     .or.right {
         padding: 0 0 0 20px;
     }
+
+    .code {
+        position: relative;
+    }
     
     .github {
-        text-align: right;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    .terminal a {
+        color: inherit;
+    }
+
+    .terminal .highlight {
+        color: hsla(354, 65%, 55%, 1);
+        font-weight: 600;
+    }
+
+    .code h2 {
+        font-weight: 300;
     }
 </style>
 <div class="container">
-    <div class="extension" onmouseenter="orToSide(true)">
-        <h1>Install extension</h1>
-        <h2 style="margin-top: 1.5em;">Get <strong>Free</strong> 100 likes</h2>
-        <h2><strong>Double</strong> your followers</h2>
-        <h2>Start <strong>Earning</strong> with your Instagram</h2>
+    <div class="code" onmouseenter="orToSide(true)">
+        <div class="github">
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/instagrambot/instabot" data-icon="octicon-star" data-show-count="true" aria-label="Star instagrambot/instabot on GitHub">Star</a>
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/instagrambot/instabot/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork instagrambot/instabot on GitHub">Fork</a>
+        </div>
 
-        <div class="extension__cta">
-            <a class="button" href="https://get.gramup.me/">
-            <button class="install">
-                <img src="https://sqy7rm.media.zestyio.com/512-px-google-chrome-icon-september-2014-svg-3x.f1cb27a519bdb5b6ed34049a5b86e317.png"/>
-                <span class="text">Add Chrome extension</span>
-            </button>
-            </a>
-            <a class="button" href="https://gramup.me/home/">
-                <button class="readmore">
-                    <span class="text">Read more</span>
+        <h1>Python library</h1>
+
+        <h2 style="margin-top: 1.5em;">Free instagram bot</h2>
+        <h2>Highly customisable</h2>
+        <h2>Anti-blocking system</h2>
+
+        <div class="terminal" style="margin-top: 2.5em;">
+            <div>$ pip install -U instabot</div>
+        </div>
+
+        <div class="terminal" style="margin: 1em;">
+            <div><span class="highlight">import</span> instabot</div>
+            <div>bot = instabot.Bot()</div>
+            <div>bot.login()</div>
+            <div>bot.follow("<a href="https://www.instagram.com/ohld/">ohld</a>")</div>
+        </div>
+
+        <div class="code__cta">
+            <a class="button" href="/home.html">
+                <button class="readme">
+                    <span class="text">Instabot</span>
                 </button>
             </a>
         </div>
     </div>
-    <div class="code" onmouseenter="orToSide(false)">
-        <h1>Code your own bot</h1>
-        <div class="text">
-            <div class="github">
-                <!-- Place this tag where you want the button to render. -->
-                <a class="github-button" href="https://github.com/instagrambot/instabot" data-icon="octicon-star" data-show-count="true" aria-label="Star instagrambot/instabot on GitHub">Star</a>
-                <!-- Place this tag where you want the button to render. -->
-                <a class="github-button" href="https://github.com/instagrambot/instabot/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork instagrambot/instabot on GitHub">Fork</a>
-            </div>
-            Free Instagram python bot, private Instagram API wrapper and a huge amount of ready-to-use automation scripts.
-            <br>
-            We are the most used Instagram library on GitHub (according to "Used by" counter). </div>
+    <div class="extension" onmouseenter="orToSide(false)">
+        <h1>Can't code</h1>
+        <h2 style="margin-top: 1.5em;">Chrome extension</h2>
+        <h2>Web GUI</h2>
+        <h2>Open source & free</h2>
 
-        <div class="terminal">
-            <div>pip install -U instabot</div>
-            <div>from instabot import Bot</div>
-            <div>bot = Bot()</div>
-        </div>
-
-        <div class="code__cta">
-            <a class="button" href="https://github.com/instagrambot/instabot/blob/master/README.md">
-                <button class="readme">
-                    <svg class="img octicon octicon-mark-github v-align-middle" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
-                    <span class="text">README.md</span>
+        <div class="extension__cta">
+            <a class="button" href="https://gramup.me/home/">
+                <button class="readmore">
+                    <span class="text">Gramup.me</span>
                 </button>
             </a>
         </div>
@@ -246,6 +311,18 @@
         }
     </script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93772762-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+
+      gtag('config', 'UA-93772762-1', { 'optimize_id': 'GTM-5SP8PD2'});
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    </script>
 </div>
 </body>
     </html>
