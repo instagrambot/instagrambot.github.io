@@ -1,224 +1,251 @@
-<!DOCTYPE HTML>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Instabot - Free Instagram Bot for automation</title>
-  <meta charset="utf-8" />
-
-  <meta name="title" content="Instabot - free Instagram bot and tools">
-  <meta name="description" content="Free instagram bot and tools. Written with love in Python. Open source. Mass following, mass liking, commenting... ">
-  <meta name="keywords" content="instabot, instagram bot, free instagram bot, insta bot, instagrambot, instagram bot, free instagram, instagram tools, instagram promotion, instagram scripts, instagram python, massfollowing, massliking, followscript, like script, python instagram, insta python">
-  <meta name="robots" content="index, follow">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="language" content="English">
-
-  <meta property="og:image" content="/assets/img/logo-github.png">
-  <meta property="og:title" content="Want to promote your instagram?">
-  <meta property="og:description" content="Cool Instagram scripts for promotion and API wrapper. Forever Free.">
-  <meta property="og:keywords" content="instagram, bot">
-  <meta property="og:site_name" content="Instabot">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://instagrambot.github.io">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:domain" content="instagrambot.github.io">
-  <meta name="twitter:site" content="@instabot">
-  <meta name="twitter:creator" content="@instabot">
-  <meta name="twitter:title" content="Want to promote your instagram?">
-  <meta name="twitter:description" content="Cool Instagram scripts for promotion and API wrapper. Forever Free.">
-  <meta name="twitter:url" content="https://instagrambot.github.io">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	
-  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(52144714, "init", { id:52144714, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/52144714" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/91201205e23d1ace89740a8b9/aaf23c4b424355bfca8e3d687.js");</script>
-  
-  <meta name="yandex-verification" content="67c0843489f8e40f" />
-
-
-  <div id="codefund"><!-- fallback content --></div>
-  <script src="https://codefund.app/properties/261/funder.js" async="async"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instabot - Free Instagram Bot for automation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
 </head>
-
 <body>
+<style>
+    body {
+        height: 100%;
+        color: white;
+    }
 
-  <!-- Wrapper -->
-  <div id="wrapper">
+    .container {
+        display: flex;
+        height: 100vh;
+        position: relative;
+    }
 
-    <!-- Header -->
-    <header id="header" class="alt">
-      <span class="logo"><img src="images/mstile-150x150.png" alt="" /></span>
-      <h1>Free Instagram Bot</h1>
-      <p>Instagram promotion and SMM scripts.<br /> Forever free. Written in Python.</p>
-    </header>
+    /*.or {*/
+        /*position: absolute;*/
+        /*top: 25%;*/
+        /*left: 50%;*/
+        /*transform: translate(-50%,  -50%);*/
+        /*text-transform: uppercase;*/
+        /*text-shadow: 0 1px 3px rgba(0, 0, 0, .3);*/
+        /*padding: 10px 20px;*/
+        /*!*background: #4182e4;*!*/
+    /*}*/
 
-    <!-- Nav -->
-    <nav id="nav">
-      <ul>
-        <li><a href="#intro" class="active">Introduction</a></li>
-        <li><a href="#first">Features</a></li>
-        <li><a href="#second">Stats</a></li>
-        <li><a href="#cta">Get Started</a></li>
-      </ul>
-    </nav>
+    .container > div {
+        flex: 1 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
-    <!-- Main -->
-    <div id="main">
+    .code {
+        background: #E3C891;
+    }
 
-      <!-- Introduction -->
-      <section id="intro" class="main">
-        <div class="spotlight">
-          <div class="content">
-            <header class="major">
-              <h2>What is it?</h2>
-            </header>
-            <p>Instabot is a Python module, which not only implements the wrapper over the Instagram API, but also various useful functions, such as
-              <ul>
-                <li><a href="https://github.com/instagrambot/instabot/blob/master/examples/follow_users_by_hashtag.py">subscribe to the list of people</a>,</li>
-                <li><a href="https://github.com/instagrambot/instabot/blob/master/examples/like_hashtags.py">like photos by hashtags</a>,</li>
-                <li><a href="https://github.com/instagrambot/instabot/blob/master/examples/unfollow_non_followers.py">unsubscribe from non-followers</a>.</li>
-              </ul>
-            </p>
-            <ul class="actions">
-              <li><a href="https://github.com/instagrambot/instabot/tree/master/examples" class="button">More scripts</a></li>
-            </ul>
-          </div>
-          <span class="image"><img src="https://github.com/instagrambot/docs/raw/master/img/favicons/android-chrome-384x384.png" alt="" /></span>
+    .code button:hover {
+        color: #E3C891;
+    }
+
+    .extension {
+        background: #4182e4;
+        font-size: 1.2em;
+    }
+
+    .extension h1 {
+        font-weight: bold;
+    }
+
+    .extension h2 {
+        font-weight: 300;
+    }
+
+    .extension h2 strong {
+        font-weight: bold;
+    }
+
+
+
+    .terminal {
+        padding: 12px;
+        letter-spacing: 1px;
+        margin: 0 auto;
+        width: 50%;
+        line-height: 2;
+        min-width: 192px;
+        max-width: 512px;
+        color: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+        border-radius: 4px;
+        background-color: #2a2a2a;
+        font-family: monospace;
+    }
+
+    a.button {
+        text-decoration: none;
+    }
+
+    button {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 30px;
+        background: #4182e4;
+        border-radius: 3px;
+        border: 1px solid rgba(255,255,255,0.5);
+        transition: .2s ease-in-out;
+        background: rgba(255,255,255,0.15);
+        border-radius: 3px;
+        border: 1px solid rgba(255,255,255,0.3);
+        padding: 16px 50px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        background: #fff;
+        color: #4182e4
+    }
+
+    button .text {
+        margin-top: -1px;
+    }
+
+    button img,
+    button .img{
+        width: 1.5em;
+        margin-right: 0.5em;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .extension__cta,
+    .code__cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        margin-top: 2.5em;
+    }
+
+    .extension__cta button {
+        margin-top: 0.8em;
+    }
+
+    .readme {
+        color: #24292e;
+        fill: #24292e;
+    }
+
+    .readme:hover {
+        color: #24292e !important;
+        fill: #24292e;
+    }
+
+    .code {
+        color: #24292e !important;
+    }
+
+    h1 {
+        flex-basis: 25%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .code > .text {
+        max-width: 70%;
+        line-height: 1.4em;
+        margin-top: 1.7em;
+        margin-bottom: 2em;
+    }
+
+    .or {
+        transition: padding 0.7s;
+        position: absolute;
+        top: 0;
+        height: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #24292e;
+        background: linear-gradient(to right, #FFFFFF, #FFFFFF 50%, #24292e 50%,  #24292e 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .or.left {
+        padding: 0 20px 0 0;
+    }
+
+    .or.right {
+        padding: 0 0 0 20px;
+    }
+    
+    .github {
+        text-align: right;
+    }
+</style>
+<div class="container">
+    <div class="extension" onmouseenter="orToSide(true)">
+        <h1>Install extension</h1>
+        <h2 style="margin-top: 1.5em;">Get <strong>Free</strong> 100 likes</h2>
+        <h2><strong>Double</strong> your followers</h2>
+        <h2>Start <strong>Earning</strong> with your Instagram</h2>
+
+        <div class="extension__cta">
+            <a class="button" href="https://get.gramup.me/">
+            <button class="install">
+                <img src="https://sqy7rm.media.zestyio.com/512-px-google-chrome-icon-september-2014-svg-3x.f1cb27a519bdb5b6ed34049a5b86e317.png"/>
+                <span class="text">Add Chrome extension</span>
+            </button>
+            </a>
+            <a class="button" href="https://gramup.me/home/">
+                <button class="readmore">
+                    <span class="text">Read more</span>
+                </button>
+            </a>
         </div>
-      </section>
-
-      <!-- First Section -->
-      <section id="first" class="main special">
-        <header class="major">
-          <h2>Features</h2>
-        </header>
-        <ul class="features">
-          <li>
-            <span class="icon major style5 fa-diamond"></span>
-            <h3>Pure AI</h3>
-            <p>Instabot is smart enough: it <a href="https://instagrambot.github.io/docs/en/Filtration.html">filters</a> users on which it is going to subscribe or like. That helps to attract real people on Instagram.</p>
-          </li>
-          <li>
-            <span class="icon major style3 fa-copy"></span>
-            <h3>Lots of prepared scripts</h3>
-            <p>Instabot community has already coded a <a href="https://github.com/instagrambot/instabot/tree/master/examples">large amount</a> of useful scripts for almost every necessary task.</p>
-          </li>
-          <li>
-            <span class="icon major style1 fa-code"></span>
-            <h3>Fully open-source</h3>
-            <p>All codes are hosted on <a href="https://github.com/instagrambot/">GitHub</a> and has been checked by thousands of developers. No one can steal your password via Instabot.</p>
-          </li>
-        </ul>
-        <footer class="major">
-          <ul class="actions">
-            <li><a href="https://instagrambot.github.io/docs/" class="button">Read the Docs</a></li>
-          </ul>
-        </footer>
-      </section>
-
-      <!-- Second Section -->
-      <section id="second" class="main special">
-        <header class="major">
-          <h2>Stats</h2>
-          <p>Instabot has been created on winter, 2017.<br /> For less than a year it has become a very popular free instagram bot and open-source project on Github. <br /> Just take a look at numbers: </p>
-        </header>
-        <ul class="statistics">
-          <li class="style1">
-            <span class="icon fa-star"></span>
-            <strong>1200+</strong> GitHub Stars
-          </li>
-          <li class="style2">
-            <span class="icon fa-code-fork"></span>
-            <strong>450+</strong> GitHub Forks
-          </li>
-          <li class="style3">
-            <span class="icon fa-download"></span>
-            <strong>500+</strong> Downloads Everyday
-          </li>
-          <li class="style4">
-            <span class="icon fa-paper-plane-o"></span>
-            <strong>900+</strong> <a href="https://t.me/instabotproject/">Telegram</a> Community
-          </li>
-          <li class="style5">
-            <span class="icon fa-diamond"></span>
-            <strong>100,000+</strong> Potential Followers
-          </li>
-        </ul>
-        <!-- <p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p> -->
-        <footer class="major">
-          <ul class="actions">
-            <li><a href="https://github.com/instagrambot/" class="button">Go GitHub</a></li>
-          </ul>
-        </footer>
-      </section>
-
-      <!-- Get Started -->
-      <section id="cta" class="main special">
-        <header class="major">
-          <h2>Get Started with Instagram bot</h2>
-          <p>The best way to start is to read the docs. There you can find the installation and usage details on instagram automation.<br /> Feel free to ask any question at Telegram chat or our other socials.</p>
-        </header>
-        <footer class="major">
-          <ul class="actions">
-            <li><a href="https://instagrambot.github.io/docs/" class="button special">Read the Docs</a></li>
-            <li><a href="https://t.me/instabotproject/" class="button">Join Chat</a></li>
-          </ul>
-        </footer>
-      </section>
-
     </div>
+    <div class="code" onmouseenter="orToSide(false)">
+        <h1>Code your own bot</h1>
+        <div class="text">
+            <div class="github">
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/instagrambot/instabot" data-icon="octicon-star" data-show-count="true" aria-label="Star instagrambot/instabot on GitHub">Star</a>
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/instagrambot/instabot/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork instagrambot/instabot on GitHub">Fork</a>
+            </div>
+            Free Instagram python bot, private Instagram API wrapper and a huge amount of ready-to-use automation scripts.
+            <br>
+            We are the most used Instagram library on GitHub (according to "Used by" counter). </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-      <section>
-        <h2>We need you!</h2>
-        <p>If you are a developer, designer, journalist or just a volunteer - we need your contribution into Instabot project. Being completely free Instabot needs fresh ideas and proactive members!</p>
-        <ul class="actions">
-          <li><a href="https://github.com/instagrambot/docs/blob/master/CONTRIBUTING.md" class="button">Contribute</a></li>
-          <li><a href="https://gramup.me/" class="button special">Check secret project</a></li>
-        </ul>
-      </section>
-      <section>
-        <h2>Contact us</h2>
-        <ul class="icons">
-          <li><a href="https://t.me/instabotproject" class="icon fa-paper-plane-o alt"><span class="label">Telegram</span></a></li>
-          <li><a href="https://www.facebook.com/Instagramyourself" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
-          <li><a href="https://www.instagram.com/ohld/" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
-          <li><a href="https://www.github.com/instagrambot/" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
-          <li><a href="mailto:danokhlopkov@gmail.com" class="icon fa-envelope-o alt"><span class="label">GitHub</span></a></li>
-        </ul>
-      </section>
-      <p class="copyright">
-        &copy; Instabot by <a href="https://www.github.com/ohld/">ohld</a> and <a href="https://www.github.com/sudoguy/">sudoguy</a> @ <a href="https://morejust.foundation/">Morejust</a>.
-      </p>
-    </footer>
+        <div class="terminal">
+            <div>pip install -U instabot</div>
+            <div>from instabot import Bot</div>
+            <div>bot = Bot()</div>
+        </div>
 
-  </div>
+        <div class="code__cta">
+            <a class="button" href="https://github.com/instagrambot/instabot/blob/master/README.md">
+                <button class="readme">
+                    <svg class="img octicon octicon-mark-github v-align-middle" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+                    <span class="text">README.md</span>
+                </button>
+            </a>
+        </div>
+    </div>
+    <h1 class="or">OR</h1>
+    <script>
+        function orToSide(isLeftSide = false) {
+          const $or = document.getElementsByClassName('or')[0];
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/skel.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-  <script src="assets/js/main.js"></script>
-	
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93772762-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-
-    gtag('config', 'UA-93772762-1', { 'optimize_id': 'GTM-5SP8PD2'});
- <!-- Global site tag (gtag.js) - Google Analytics -->
-  </script>
-	
+          $or.classList.add(isLeftSide ? 'left' : 'right');
+          $or.classList.remove(isLeftSide ? 'right' : 'left');
+        }
+    </script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</div>
 </body>
-
-</html>
+    </html>
