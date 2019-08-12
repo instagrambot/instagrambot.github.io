@@ -6,6 +6,6 @@ With
 * Google Analytics 
 * Mobile responsive
 
-Feel free to use anything withont any licence. Love. 
+Feel free to use anything without any licence. Love. 
 ----
 [Dan Okhlopkov](https://okhlopkov.com)
