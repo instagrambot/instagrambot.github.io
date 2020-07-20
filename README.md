@@ -1,11 +1,10 @@
 # [instagrambot.github.io](https://instagrambot.github.io)
-Landing page for Instabot project.
+Landing page for Igbot project.
 
 With 
 * Yandex Metrika and webmaster
 * Google Analytics 
 * Mobile responsive
 
-Feel free to use anything without any licence. Love. 
-----
-[Dan Okhlopkov](https://okhlopkov.com)
+Feel free to use anything without any licence. With love. 
+
