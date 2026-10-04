@@ -1,444 +1,122 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Igbot - Free Bot for automation</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
-    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(52144714, "init", { id:52144714, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/52144714" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/91201205e23d1ace89740a8b9/aaf23c4b424355bfca8e3d687.js");</script>
-
-    <meta name="title" content="Instabot - free Instagram bot and tools">
-    <meta name="description" content="Free instagram bot and tools. Written with love in Python. Open source. Mass following, mass liking, commenting... ">
-    <meta name="keywords" content="instabot, instagram bot, free instagram bot, insta bot, instagrambot, instagram bot, free instagram, instagram tools, instagram promotion, instagram scripts, instagram python, massfollowing, massliking, followscript, like script, python instagram, insta python">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-
-    <meta property="og:image" content="/assets/img/logo-github.png">
-    <meta property="og:title" content="Want to promote your instagram?">
-    <meta property="og:description" content="Cool Instagram scripts for promotion and API wrapper. Forever Free.">
-    <meta property="og:keywords" content="instagram, bot">
-    <meta property="og:site_name" content="Instabot">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://instagrambot.github.io">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:domain" content="instagrambot.github.io">
-    <meta name="twitter:site" content="@instabot">
-    <meta name="twitter:creator" content="@instabot">
-    <meta name="twitter:title" content="Want to promote your instagram?">
-    <meta name="twitter:description" content="Cool Instagram scripts for promotion and API wrapper. Forever Free.">
-    <meta name="twitter:url" content="https://instagrambot.github.io">
-
-    <meta name="yandex-verification" content="67c0843489f8e40f" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f1f4f5">
+  <title>Instagram &amp; TikTok Data APIs | Instabot Python</title>
+  <meta name="description" content="Compare Instagram and TikTok public data APIs. The Instabot Python library is no longer maintained; find its source and documentation.">
+  <meta name="keywords" content="instabot, instagram bot, instagram python library, Instagram API, Instagram data API, TikTok data API">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://instagrambot.github.io/">
+  <meta property="og:title" content="Instagram &amp; TikTok Data APIs | Instabot Python">
+  <meta property="og:description" content="Compare Instagram and TikTok public data APIs. The Instabot Python library is no longer maintained; find its source and documentation.">
+  <meta property="og:site_name" content="Instabot">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://instagrambot.github.io/">
+  <meta property="og:image" content="https://instagrambot.github.io/images/mstile-150x150.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:domain" content="instagrambot.github.io">
+  <meta name="twitter:title" content="Instagram &amp; TikTok Data APIs | Instabot Python">
+  <meta name="twitter:description" content="Compare Instagram and TikTok public data APIs. The Instabot Python library is no longer maintained; find its source and documentation.">
+  <meta name="twitter:url" content="https://instagrambot.github.io/">
+  <meta name="yandex-verification" content="67c0843489f8e40f">
+  <!-- Yandex.Metrika counter -->
+  <script>
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t);a=e.getElementsByTagName(t)[0];k.async=1;k.src=r;a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(52144714, "init", {id:52144714, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/52144714" style="position:absolute;left:-9999px" alt=""></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/91201205e23d1ace89740a8b9/aaf23c4b424355bfca8e3d687.js");</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93772762-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-93772762-1', {optimize_id: 'GTM-5SP8PD2'});
+  </script>
+  <style>
+    :root { color-scheme: light; --paper:#f1f4f5; --white:#fff; --ink:#202a35; --muted:#53616d; --rule:#d3dce0; --orange:#bd4c24; --blue:#214c69; --sans:"Avenir Next",Avenir,"Segoe UI",Arial,sans-serif; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.5 var(--sans); }
+    a { color:var(--blue); text-underline-offset:.2em; }
+    a:hover { color:#873618; }
+    a:focus-visible { outline:3px solid var(--orange); outline-offset:3px; }
+    .wrap { width:min(1040px,calc(100% - 40px)); margin:0 auto; }
+    .topbar { display:flex; align-items:center; justify-content:space-between; min-height:58px; border-bottom:1px solid var(--rule); }
+    .brand { color:var(--ink); font:800 16px/1 ui-monospace,monospace; letter-spacing:-.07em; text-decoration:none; }
+    .brand span { color:var(--orange); }
+    .toplinks { font-size:13px; font-weight:650; }
+    .toplinks a { color:var(--muted); }
+    main { padding:24px 0 32px; }
+    h1 { margin:0; font-size:clamp(30px,4vw,46px); line-height:1.08; letter-spacing:-.05em; }
+    .intro { margin:8px 0 14px; color:var(--muted); }
+    .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+    .card { min-width:0; padding:17px; background:var(--white); border:1px solid var(--rule); border-top:3px solid var(--blue); }
+    .card:nth-child(2) { border-top-color:var(--orange); }
+    .card:nth-child(3) { border-top-color:#758958; }
+    .platform { margin:0 0 5px; color:var(--muted); font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; }
+    .card h2 { margin:0 0 6px; font-size:21px; line-height:1.2; }
+    .card p:not(.platform) { min-height:58px; margin:0 0 10px; color:var(--muted); font-size:13px; line-height:1.4; }
+    .button { display:inline-flex; min-height:38px; align-items:center; padding:7px 11px; background:var(--orange); color:#fff; font-size:13px; font-weight:700; text-decoration:none; }
+    .button:hover { background:#873618; color:#fff; }
+    .docs-link { display:block; margin-top:9px; font-size:12px; font-weight:650; }
+    .offer { margin:14px 0 0; padding:10px 12px; background:#dcebe5; color:#293e39; font-size:13px; }
+    .disclosure { margin:6px 0 0; color:var(--muted); font-size:12px; }
+    .legacy { margin-top:22px; color:var(--muted); font-size:12px; }
+    footer { padding:14px 0 22px; border-top:1px solid var(--rule); color:var(--muted); font-size:12px; }
+    footer p { margin:0; }
+    @media(max-width:700px) { .wrap { width:calc(100% - 32px); } main { padding-top:18px; } .intro { margin:6px 0 11px; } .cards { grid-template-columns:1fr; gap:7px; } .card { padding:11px 12px; } .card .platform { margin-bottom:3px; } .card h2 { margin-bottom:4px; font-size:19px; } .card p:not(.platform) { min-height:0; margin-bottom:6px; font-size:12px; line-height:1.35; } .button { min-height:35px; } .docs-link { margin-top:5px; } }
+  </style>
 </head>
 <body>
-<style>
-    body {
-        height: 100%;
-        color: white;
-    }
-
-    .container {
-        display: flex;
-        min-height: 100vh;
-        position: relative;
-    }
-
-    /*.or {*/
-        /*position: absolute;*/
-        /*top: 25%;*/
-        /*left: 50%;*/
-        /*transform: translate(-50%,  -50%);*/
-        /*text-transform: uppercase;*/
-        /*text-shadow: 0 1px 3px rgba(0, 0, 0, .3);*/
-        /*padding: 10px 20px;*/
-        /*!*background: #4182e4;*!*/
-    /*}*/
-
-    .container > div {
-        flex: 1 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    @media (max-width: 500px) {
-        .container .github {
-            top: 20px;
-            right: 20px;
-        }
-
-        .container {
-            flex-direction: column;
-        }
-
-        .container > div {
-            min-height: 100vh;
-        }
-
-        .container .or {
-            top: 100vh;
-            left: 50%;
-            height: auto;
-            margin: 0;
-            flex-basis: 0;
-            transform: translate(-50%, -50%);
-            background: linear-gradient(to top, #FFFFFF, #FFFFFF 50%, #24292e 50%, #24292e 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: none;
-        }
-
-        .container .or.left {
-            padding: 0 0 15px 0;
-        }
-
-        .container .or.right {
-            padding: 15px 0 0 0;
-        }
-
-        .container .terminal {
-            width: 90%;
-        }
-
-        .section__additional {
-            width: 100% !important;
-        }
-    }
-
-    .extension a {
-      color: #F85E20;
-      text-decoration: none;
-    }
-
-    .code a {
-      color: #FFFFFF;
-      text-decoration: none;
-    }
-
-    .code {
-        background: #E3C891;
-    }
-
-    .code button:hover {
-        color: #E3C891;
-    }
-
-    .extension {
-        background: #FFFFFF;
-        color: #000;
-        text-align: center;
-    }
-
-    .extension h1 {
-        font-weight: bold;
-    }
-
-    .extension h2 {
-        font-weight: 300;
-    }
-
-    .extension h2 strong {
-        font-weight: bold;
-    }
-
-
-
-    .terminal {
-        padding: 12px;
-        letter-spacing: 1px;
-        margin: 0 auto;
-        width: 100%;
-        line-height: 2;
-        min-width: 192px;
-        max-width: 512px;
-        color: white;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
-        border-radius: 4px;
-        background-color: #2a2a2a;
-        font-family: monospace;
-    }
-
-    a.button {
-        text-decoration: none;
-    }
-
-    button {
-        color: #fff !important;
-        text-decoration: none;
-        background: #4182e4;
-        transition: .2s ease-in-out;
-        background: rgba(0,0,0,0.15);
-        border-radius: 3px;
-        border: 1px solid rgba(255,255,255,0.3);
-        padding: 16px 50px;
-        cursor: pointer;
-        width: 100%;
-    }
-
-    button:hover {
-        background: #fff;
-        color: #24292e !important;
-    }
-
-    button:hover .text {
-        text-shadow: none;
-    }
-
-    button .text {
-        margin-top: -1px;
-        text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
-        /*transition: .2s ease-in-out;*/
-    }
-
-    button img,
-    button .img{
-        width: 1.5em;
-        margin-right: 0.5em;
-    }
-
-    button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .extension .readmore {
-      background-color: #F85E20;
-      font-weight: 700;
-    }
-
-    .extension__cta,
-    .code__cta {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        margin-top: 1.5em;
-    }
-
-    .extension__cta button {
-        margin-top: 0.8em;
-    }
-
-    .readme {
-        color: #24292e;
-        fill: #24292e;
-    }
-
-    .readme:hover {
-        color: #24292e !important;
-        fill: #24292e;
-    }
-
-    .code {
-        color: #24292e !important;
-    }
-
-    h1 {
-        flex-basis: 15vh;
-        display: flex;
-        align-items: flex-end;
-    }
-
-    .code > .text {
-        max-width: 70%;
-        line-height: 1.4em;
-        margin-top: 1.7em;
-        margin-bottom: 2em;
-    }
-
-    .code .text a {
-        color: inherit;
-    }
-
-    .code .text a:hover {
-        opacity: 0.6;
-    }
-
-    .or {
-        transition: padding 0.7s;
-        position: absolute;
-        top: 0;
-        height: 15vh;
-        margin: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #24292e;
-        background: linear-gradient(to left, #F85E20, #F85E20 50%, #24292e 50%,  #24292e 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .or.left {
-        padding: 0 20px 0 0;
-    }
-
-    .or.right {
-        padding: 0 0 0 20px;
-    }
-
-    .code {
-        position: relative;
-    }
-
-    .github {
-        position: absolute;
-        top: 40px;
-        right: 40px;
-    }
-
-    .terminal a {
-        color: inherit;
-    }
-
-    .terminal .highlight {
-        color: hsla(354, 65%, 55%, 1);
-        font-weight: 600;
-    }
-
-    .code h2 {
-        font-weight: 300;
-    }
-
-    .section__title {
-        display: flex;
-        height: 15vh;
-        flex-basis: 15vh;
-    }
-
-    .section__title h1 {
-        flex: 1;
-        margin: 0;
-    }
-
-    .section__buttons {
-        padding-bottom: 2em;
-        flex: 1;
-    }
-
-    .section__additional {
-        width: 70s%;
-    }
-
-    .section__additional .video {
-        width: 100%;
-        padding: 56.25% 0px 0px;
-        height: 0;
-        position: relative;
-        margin: 0 auto;
-    }
-
-    .video iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .section__description {
-        text-align: center;
-    }
-</style>
-<div class="container">
-    <div class="code section" onmouseenter="orToSide(true)">
-        <div class="github">
-            <!-- Place this tag where you want the button to render. -->
-            <a class="github-button" href="https://github.com/instagrambot/instabot" data-icon="octicon-star" data-show-count="true" aria-label="Star instagrambot/instabot on GitHub">Star</a>
-            <!-- Place this tag where you want the button to render. -->
-            <a class="github-button" href="https://github.com/instagrambot/instabot/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork instagrambot/instabot on GitHub">Fork</a>
-        </div>
-
-        <div class="section__title">
-            <h1>Python library</h1>
-        </div>
-
-        <div class="section__description">
-            <h2 style="margin-top: 1.5em;">Free bot</h2>
-            <h2>Highly customisable</h2>
-            <h2>Anti-blocking system</h2>
-            <h2>Not supported anymore</h2>
-        </div>
-
-        <!-- <div class="section__additional">
-            <div class="terminal" style="margin-top: 2.5em;">
-                <div>$ pip install -U instabot</div>
-            </div>
-
-            <div class="terminal" style="margin: 1em auto;">
-                <div><span class="highlight">import</span> instabot</div>
-                <div>bot = instabot.Bot()</div>
-                <div>bot.login()</div>
-                <div>bot.follow("<a href="https://www.instagram.com/ohld/">ohld</a>")</div>
-            </div>
-        </div> -->
-
-        <div class="code__cta section__buttons">
-            <a class="button" href="/home.html">
-                <button class="readme">
-                    <span class="text">Bot</span>
-                </button>
-            </a>
-
-            <a style="margin-top: 1rem;"href="https://blog.likeup.me/?utm_source=instabot-landing">How to grow my Instagram?</a>
-        </div>
-
-    </div>
-    <div class="extension section" onmouseenter="orToSide(false)">
-        <div class="section__title">
-            <h1>Can't code, want free likes</h1>
-        </div>
-
-        <div class="section__description">
-            <h2 style="margin-top: 1.5em;">Free likes for new posts</h2>
-            <h2>Go viral in Explore tab (<a href="https://likeup.me/?ref=instabot-landing&utm_source=instabot-landing">read more</a>)</h2>
-            <h2>Based on <a href="https://gramup.me/home/?ref=instabot-landing&utm_source=instabot-landing">GramUp</a> Family</h2>
-        </div>
-
-        <div class="section__additional">
-            <div>
-                <img src="images/likes.gif" height="240"></img>
-            </div>
-        </div>
-
-        <div class="extension__cta section__buttons">
-            <a class="button" href="http://get.likeup.me/?utm_source=instabot-landing">
-                <button class="readmore">
-                    <span class="text">Install LikeUp</span>
-                </button>
-            </a>
-
-            <a style="margin-top: 1rem;" href="https://blog.likeup.me/?utm_source=instabot-landing">How to grow my Instagram?</a>
-        </div>
-
-    </div>
-
-    <h1 class="or">OR</h1>
-    <script>
-        function orToSide(isLeftSide = false) {
-          const $or = document.getElementsByClassName('or')[0];
-
-          $or.classList.add(isLeftSide ? 'left' : 'right');
-          $or.classList.remove(isLeftSide ? 'right' : 'left');
-        }
-    </script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93772762-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-
-      gtag('config', 'UA-93772762-1', { 'optimize_id': 'GTM-5SP8PD2'});
-    </script>
-</div>
+  <header class="topbar wrap">
+    <a class="brand" href="/" aria-label="Instabot home">ig<span>bot</span></a>
+    <nav class="toplinks" aria-label="Main navigation"><a href="#legacy">Original Instabot library</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="wrap" aria-labelledby="page-title">
+      <h1 id="page-title">Instagram &amp; TikTok Data APIs</h1>
+      <p class="intro">For current social data APIs, compare these options for public Instagram and TikTok data.</p>
+      <div class="cards">
+        <article class="card">
+          <p class="platform">Instagram + TikTok</p>
+          <h2>DataLikers</h2>
+          <p>Public Instagram and TikTok data, with API, MCP, and dataset options.</p>
+          <div class="card-actions">
+            <a class="button primary" href="https://datalikers.com/p/d0qxedm6" target="_blank" rel="sponsored nofollow noopener">Visit DataLikers</a>
+            <a class="docs-link" href="https://datalikers.com/docs" target="_blank" rel="noopener">DataLikers API documentation</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="platform">Instagram</p>
+          <h2>HikerAPI</h2>
+          <p>Public Instagram data API for profiles, media, comments, hashtags, and search.</p>
+          <div class="card-actions">
+            <a class="button primary" href="https://hikerapi.com/p/N2P6iqiM" target="_blank" rel="sponsored nofollow noopener">Visit HikerAPI</a>
+            <a class="docs-link" href="https://api.hikerapi.com/docs" target="_blank" rel="noopener">HikerAPI API documentation</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="platform">TikTok</p>
+          <h2>LamaTok</h2>
+          <p>Unofficial TikTok API for public profiles, videos, comments, music, and search.</p>
+          <div class="card-actions">
+            <a class="button primary" href="https://lamatok.com/p/113mv6te" target="_blank" rel="sponsored nofollow noopener">Visit LamaTok</a>
+            <a class="docs-link" href="https://api.lamatok.com/docs" target="_blank" rel="noopener">LamaTok API documentation</a>
+          </div>
+        </article>
+      </div>
+      <p class="offer">Use these referral links for a discount; provider terms apply.</p>
+      <p class="disclosure">These are referral links. The site owner may receive a commission if you sign up through one.</p>
+    </section>
+    <p id="legacy" class="legacy wrap">Instabot was an open-source Instagram bot and API wrapper built in Python; it is no longer maintained. <a href="https://github.com/ohld/igbot">Source</a> · <a href="https://instagrambot.github.io/docs/">Documentation</a></p>
+  </main>
 </body>
-    </html>
+</html>
