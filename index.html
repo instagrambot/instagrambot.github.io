@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <title>Instagram &amp; TikTok API | Instabot Python</title>
-  <meta name="description" content="Instagram and TikTok public data APIs for profiles, posts, comments, hashtags, and search.">
+  <title>Instagram &amp; TikTok API — Profiles, Reels &amp; Videos</title>
+  <meta name="description" content="Instagram and TikTok data APIs for profiles, posts, Reels, videos and comments. Compare DataLikers, HikerAPI and LamaTok.">
   <meta name="keywords" content="instabot, instagram bot, instagram python library, Instagram API, Instagram data API, TikTok data API">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://instagrambot.github.io/">
-  <meta property="og:title" content="Instagram &amp; TikTok API | Instabot Python">
-  <meta property="og:description" content="Instagram and TikTok public data APIs for profiles, posts, comments, hashtags, and search.">
+  <meta property="og:title" content="Instagram &amp; TikTok API — Profiles, Reels &amp; Videos">
+  <meta property="og:description" content="Instagram and TikTok data APIs for profiles, posts, Reels, videos and comments. Compare DataLikers, HikerAPI and LamaTok.">
   <meta property="og:site_name" content="Instabot">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://instagrambot.github.io/">
   <meta property="og:image" content="https://instagrambot.github.io/images/mstile-150x150.png">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:domain" content="instagrambot.github.io">
-  <meta name="twitter:title" content="Instagram &amp; TikTok API | Instabot Python">
-  <meta name="twitter:description" content="Instagram and TikTok public data APIs for profiles, posts, comments, hashtags, and search.">
+  <meta name="twitter:title" content="Instagram &amp; TikTok API — Profiles, Reels &amp; Videos">
+  <meta name="twitter:description" content="Instagram and TikTok data APIs for profiles, posts, Reels, videos and comments. Compare DataLikers, HikerAPI and LamaTok.">
   <meta name="twitter:url" content="https://instagrambot.github.io/">
   <meta name="yandex-verification" content="67c0843489f8e40f">
   <!-- Yandex.Metrika counter -->
@@ -38,42 +38,43 @@
   </script>
   <style>
     * { box-sizing:border-box; }
-    body { max-width:760px; margin:0 auto; padding:40px 24px 32px; background:#fff; color:#000; font:16px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
-    h1 { margin:0 0 28px; font-size:clamp(26px,5vw,40px); line-height:1.12; letter-spacing:-.06em; }
-    .service { display:grid; grid-template-columns:150px 1fr auto; align-items:baseline; gap:16px; padding:17px 0; border-top:1px solid #000; }
-    .service:last-of-type { border-bottom:1px solid #000; }
-    .platform { font-size:12px; text-transform:uppercase; }
-    .name { font-weight:700; }
-    a { color:#000; font-weight:700; text-decoration:underline; text-underline-offset:3px; }
-    a:focus-visible { outline:2px solid #000; outline-offset:4px; }
-    @media(max-width:560px) {
-      body { padding:24px 16px; }
-      h1 { margin-bottom:22px; }
-      .service { grid-template-columns:1fr auto; gap:2px 12px; padding:13px 0; }
-      .platform { grid-column:1 / -1; font-size:11px; }
-      .name { grid-column:1; }
-      .service a { grid-column:2; grid-row:2; }
+    body { margin:0; background:#fff; color:#000; font:16px/1.2 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    main { min-height:100vh; min-height:100svh; display:grid; grid-template-rows:auto repeat(3,minmax(0,1fr)); padding:clamp(16px,3vh,36px) clamp(16px,3vw,48px); }
+    h1 { margin:0; padding:0 0 clamp(12px,2vh,24px); font-size:clamp(2.5rem,6.5vw,6.5rem); line-height:.98; letter-spacing:-.075em; }
+    .service { display:grid; grid-template-columns:minmax(160px,22vw) 1fr auto; grid-template-rows:1fr; align-items:center; gap:24px; border-top:2px solid #000; color:#000; text-decoration:none; }
+    .service:last-of-type { border-bottom:2px solid #000; }
+    .platform { grid-column:1; grid-row:1; font-size:clamp(11px,1.1vw,15px); text-transform:uppercase; }
+    .name { grid-column:2; grid-row:1; font-size:clamp(2.5rem,6.5vw,6rem); font-weight:700; letter-spacing:-.075em; }
+    .arrow { grid-column:3; grid-row:1; font-size:clamp(2rem,4vw,4rem); }
+    .service:hover, .service:focus-visible { background:#000; color:#fff; outline:none; }
+    @media(max-width:640px) {
+      main { grid-template-rows:auto repeat(3,minmax(0,1fr)); padding:18px 16px; }
+      h1 { padding-bottom:20px; font-size:clamp(2.4rem,10vw,3.25rem); }
+      .service { grid-template-columns:minmax(0,1fr) auto; grid-template-rows:auto 1fr; gap:4px 12px; }
+      .platform { grid-column:1 / -1; grid-row:1; font-size:11px; }
+      .name { grid-column:1; grid-row:2; font-size:clamp(2.25rem,10vw,3.25rem); }
+      .arrow { grid-column:2; grid-row:2; font-size:2rem; }
     }
   </style>
 </head>
 <body>
   <main>
     <h1>Instagram &amp; TikTok API</h1>
-    <div class="service">
+    <a class="service" href="https://datalikers.com/p/d0qxedm6" target="_blank" rel="sponsored nofollow noopener">
       <span class="platform">Instagram + TikTok</span>
-      <span class="name">DataLikers</span>
-      <a href="https://datalikers.com/p/d0qxedm6" target="_blank" rel="sponsored nofollow noopener">Open DataLikers ↗</a>
-    </div>
-    <div class="service">
+      <strong class="name">DataLikers</strong>
+      <span class="arrow" aria-hidden="true">↗</span>
+    </a>
+    <a class="service" href="https://hikerapi.com/p/N2P6iqiM" target="_blank" rel="sponsored nofollow noopener">
       <span class="platform">Instagram</span>
-      <span class="name">HikerAPI</span>
-      <a href="https://hikerapi.com/p/N2P6iqiM" target="_blank" rel="sponsored nofollow noopener">Open HikerAPI ↗</a>
-    </div>
-    <div class="service">
+      <strong class="name">HikerAPI</strong>
+      <span class="arrow" aria-hidden="true">↗</span>
+    </a>
+    <a class="service" href="https://lamatok.com/p/113mv6te" target="_blank" rel="sponsored nofollow noopener">
       <span class="platform">TikTok</span>
-      <span class="name">LamaTok</span>
-      <a href="https://lamatok.com/p/113mv6te" target="_blank" rel="sponsored nofollow noopener">Open LamaTok ↗</a>
-    </div>
+      <strong class="name">LamaTok</strong>
+      <span class="arrow" aria-hidden="true">↗</span>
+    </a>
   </main>
 </body>
 </html>
